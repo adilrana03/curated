@@ -14,11 +14,14 @@ const LoginPage = () => {
 	};
 
 	return (
-		<div className='max-w-md mx-auto px-4 py-16'>
-			<h1 className='text-3xl font-light mb-12'>Login</h1>
+		<div className='max-w-5xl mx-auto px-5 md:px-20 lg:px-4 py-16 text-[#333]'>
+			<h1 className='lg:text-[28px] md:text-[24px] text-[20px] mb-5 font-light  font-urbanist  text-center'>
+				Login
+			</h1>
+            <hr className="mb-10" />
 
-			<form onSubmit={handleSubmit} className='space-y-6'>
-				<div className='space-y-2'>
+			<form onSubmit={handleSubmit} className='space-y-6 font-urbanist max-w-2xl mx-auto'>
+				<div className='space-y-2 text-[14px] md:text-[18px] xl:text-[22px]'>
 					<label className='block'>
 						Username or Email Address{" "}
 						<span className='text-red-500'>*</span>
@@ -34,7 +37,7 @@ const LoginPage = () => {
 					/>
 				</div>
 
-				<div className='space-y-2'>
+				<div className='space-y-2 text-[14px] md:text-[18px] xl:text-[22px] font-urbanist'>
 					<label className='block'>
 						Password <span className='text-red-500'>*</span>
 					</label>
@@ -52,7 +55,7 @@ const LoginPage = () => {
 					/>
 				</div>
 
-				<div className='flex items-center justify-between'>
+				<div className='flex items-center justify-between font-urbanist'>
 					<label className='flex items-center space-x-2'>
 						<input
 							type='checkbox'
@@ -76,12 +79,12 @@ const LoginPage = () => {
 
 				<button
 					type='submit'
-					className='w-full bg-black text-white py-2 hover:bg-gray-800 transition-colors'>
+					className='w-[25%] md:w-[20%] bg-black text-white py-2 hover:bg-gray-800 transition-colors font-urbanist'>
 					Login
 				</button>
 
-				<div className='text-center'>
-					<p>Don't have an account?</p>
+				<div className='text-center font-urbanist'>
+					<p className="mb-4">Don't have an account?</p>
 					<Link
 						href='/register'
 						className='text-gray-800 hover:text-gray-600'>

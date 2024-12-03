@@ -24,18 +24,21 @@ const ServicesPage = () => {
 	];
 
 	return (
-		<div className='max-w-5xl mx-auto px-4 py-16 space-y-16'>
+		<div className='max-w-5xl mx-auto lg:px-4 md:px-28 px-5 py-16 space-y-16 font-urbanist'>
 			{/* Hero Section */}
-			<div className='text-center space-y-2'>
+			<div className='text-center space-y-2 font-urbanist text-[#333]'>
 				<Image
 					src={img}
 					alt='JAMES WALES'
-					width={400}
-					height={400}
-					className='mx-auto mb-6'
+					// width={400}
+					// height={400}
+					className='mx-auto mb-6 md:w-[400px] md:h-[400px] w-[240px] h-[200px]'
 				/>
-				<h2 className='text-lg font-medium'>JAMES WALES</h2>
-				<p className='text-sm'>
+				<h2 className='text-[16px] md:text-[18px] xl:text-[22px] 2xl:text-[26px]'>
+					JAMES WALES
+				</h2>
+
+				<p className='text-[12px] lg:text-[14px]'>
 					Nur Al-din Hussein Khan: The Residency Vakil, Poona
 				</p>
 				<p className='text-sm'>1792</p>
@@ -43,16 +46,20 @@ const ServicesPage = () => {
 			</div>
 
 			{/* Services Section */}
-			<div className='space-y-12'>
-				<h1 className='text-2xl text-center'>OUR SERVICES</h1>
+			<div className='space-y-12 font-urbanist'>
+				<h1 className='text-[18px] lg:text-[22px] text-[#333]  md:text-center '>
+					OUR SERVICES
+				</h1>
 
-				<div className='text-center'>
-					<h3 className='mb-4'>WHAT WE DO:</h3>
-					<div className='flex flex-wrap w-[60%] justify-center gap-4'>
+				<div className='lg:text-cente font-urbanist'>
+					<h3 className='mb-4 text-[14px] md:text-[16px] xl:text-[22px] 2xl:text-[]'>
+						WHAT WE DO:
+					</h3>
+					<div className='flex flex-wrap lg:w-[60%] justify-start lg:justify-cente gap-6 '>
 						{services.map((service) => (
 							<span
 								key={service}
-								className='px-4 py-2 bg-[#F4F4F4] rounded-md'>
+								className='px-4 py-2 bg-[#F4F4F4] rounded-md text-[9px] md:text-[12px] xl:text-[16px] '>
 								{service}
 							</span>
 						))}
@@ -60,11 +67,11 @@ const ServicesPage = () => {
 				</div>
 
 				{/* Appraisals Section */}
-				<div className='space-y-4'>
-					<h3 className='text-xl'>
+				<div className='space-y-4 font-urbanist text-[#333]'>
+					<h1 className='text-[14px] md:text-[16px] lg:text-[22px] font-urbanist'>
 						Appraisals, Formal Valuations, and Auction Estimates
-					</h3>
-					<p className='text-gray-700'>
+					</h1>
+					<p className='text-gray-700  text-[10px] md:text-[12px] lg:text-[14px]'>
 						Appraisals and formal valuations are provided by Artfi
 						Curated for private collections. We provide the same
 						service for museums, trustees, and corporations and also
@@ -77,9 +84,11 @@ const ServicesPage = () => {
 				</div>
 
 				{/* Advisory Service Section */}
-				<div className='space-y-4'>
-					<h3 className='text-xl'>A Bespoke Art Advisory Service</h3>
-					<p className='text-gray-700'>
+				<div className='space-y-4 font-urbanist text-[#333]'>
+					<h1 className='text-[14px] md:text-[16px] lg:text-[22px]'>
+						A Bespoke Art Advisory Service
+					</h1>
+					<p className='text-gray-700  text-[10px] md:text-[12px] lg:text-[14px]'>
 						Artfi Curated Art offers individualized services and
 						total discretion without compromising on the full
 						experience. Right input, representing each client like
@@ -92,9 +101,11 @@ const ServicesPage = () => {
 				</div>
 
 				{/* Included Services Section */}
-				<div className='space-y-4 bg-[#F4F4F4] p-5'>
-					<h3 className='text-xl'>What Services Are Included?</h3>
-					<ul className='list-disc pl-6 space-y-2'>
+				<div className='space-y-4 bg-[#F4F4F4] p-5 font-urbanist text-[#333]'>
+					<h1 className='text-[14px] md:text-[16px] lg:text-[22px]'>
+						What Services Are Included?
+					</h1>
+					<ul className='list-disc pl-6 space-y-2 text-gray-700 text-[10px] md:text-[12px] lg:text-[14px]'>
 						{includedServices.map((service) => (
 							<li key={service} className='text-gray-700 '>
 								{service}
@@ -104,12 +115,12 @@ const ServicesPage = () => {
 				</div>
 
 				{/* Private Sales Section */}
-				<div className='space-y-4'>
-					<h3 className='text-xl'>
+				<div className='space-y-4 font-urbanist text-[#333]'>
+					<h1 className='text-[14px] md:text-[16px] lg:text-[22px]'>
 						ARTFI CURATED PRIVATE SALES: A discrete option for art
 						lovers
-					</h3>
-					<p className='text-gray-700'>
+					</h1>
+					<p className='text-[#333] text-[10px] md:text-[12px] lg:text-[14px]'>
 						Artfi Curated Private Sales personalizes in delivering a
 						confidential and efficient service on behalf of our
 						clients. Our team of specialists have extensive
@@ -118,28 +129,6 @@ const ServicesPage = () => {
 						discreet transactions between buyers and sellers based
 						on expressed preferences.
 					</p>
-				</div>
-
-				{/* Newsletter Section */}
-				<div className='space-y-6 w-full'>
-					<h3 className='text-xl'>Sign up for latests updates:</h3>
-					<form className='max-w-full space-y-6'>
-						<input
-							type='text'
-							placeholder='Full Name'
-							className='w-full border-b border-gray-300 py-2 focus:outline-none'
-						/>
-						<input
-							type='email'
-							placeholder='Email'
-							className='w-full border-b border-gray-300 py-2 focus:outline-none'
-						/>
-						<button
-							type='submit'
-							className='bg-black text-white px-8 py-2 hover:bg-gray-800 transition-colors'>
-							Subscribe
-						</button>
-					</form>
 				</div>
 			</div>
 		</div>

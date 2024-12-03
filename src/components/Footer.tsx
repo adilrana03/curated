@@ -37,9 +37,11 @@ const Footer = () => {
 					<div className='space-y-4'>
 						<div className='flex items-center gap-2'>
 							<MapPin className='w-5 h-5' />
-							<h3 className='text-xl'>{locations.dubai.title}</h3>
+							<h3 className='text-[12px] lg:text-[21px] font-urbanist text-[#000]'>
+								{locations.dubai.title}
+							</h3>
 						</div>
-						<div className='space-y-2'>
+						<div className='space-y-2 lg:text-[13px] md:text-[10px] text-[8px] font-urbanist text-[#333]'>
 							<p className='whitespace-pre-line'>
 								{locations.dubai.address}
 							</p>
@@ -54,9 +56,11 @@ const Footer = () => {
 					<div className='space-y-4'>
 						<div className='flex items-center gap-2'>
 							<MapPin className='w-5 h-5' />
-							<h3 className='text-xl'>{locations.delhi.title}</h3>
+							<h3 className='text-[12px] lg:text-[21px] font-urbanist text-[#000]'>
+								{locations.delhi.title}
+							</h3>
 						</div>
-						<div className='space-y-2'>
+						<div className='space-y-2 lg:text-[13px] md:text-[10px] text-[8px] font-urbanist text-[#333]'>
 							<p className='whitespace-pre-line'>
 								{locations.delhi.address}
 							</p>
@@ -69,8 +73,10 @@ const Footer = () => {
 
 					{/* Links */}
 					<div className='space-y-4'>
-						<h3 className='text-xl'>LINK</h3>
-						<div className='space-y-2'>
+						<h3 className='text-[12px] lg:text-[21px] font-urbanist text-[#000]'>
+							LINK
+						</h3>
+						<div className='space-y-2 lg:text-[13px] md:text-[10px] text-[8px] font-urbanist text-[#333]'>
 							{links.link.map((link) => (
 								<p
 									key={link}
@@ -83,10 +89,14 @@ const Footer = () => {
 
 					{/* Quick Links */}
 					<div className='space-y-4'>
-						<h3 className='text-xl'>Quick Link</h3>
+						<h3 className='text-[12px] lg:text-[21px] font-urbanist text-[#000]'>
+							Quick Link
+						</h3>
 						<div className='grid grid-cols-3 gap-4'>
 							{links.quickLink.map((column, idx) => (
-								<div key={idx} className='space-y-2'>
+								<div
+									key={idx}
+									className='space-y-2 lg:text-[13px] md:text-[10px] text-[8px] font-urbanist text-[#333]'>
 									{column.map((link) => (
 										<p
 											key={link}

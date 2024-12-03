@@ -12,7 +12,7 @@ const AboutUs = () => {
 	];
 
 	return (
-		<div className='max-w-4xl mx-auto px-4 py-16 space-y-16'>
+		<div className='max-w-4xl mx-auto lg:px-4 md:px-[120px] px-5 py-16 space-y-16'>
 			{/* Hero Section */}
 			<div>
 				<Image
@@ -23,9 +23,11 @@ const AboutUs = () => {
 			</div>
 
 			{/* About Section */}
-			<div className='space-y-12'>
-				<h1 className='text-2xl font-light'>About Us</h1>
-				<p className='text-gray-700'>
+			<div className='space-y-12 font-urbanist'>
+				<h1 className=' text-[16px] md:text-[16px] text-[#333] xl:text-[21px] mb-4 space-x-1'>
+					About Us
+				</h1>
+				<p className='text-[#333] text-[12px]  xl:text-[14px] 2xl:text-[]'>
 					Artfi Curated Art is a premier art house based in Dubai,
 					United Arab Emirates. we have been working as an art
 					advisory and gallery for the last decade focusing on South
@@ -33,10 +35,10 @@ const AboutUs = () => {
 				</p>
 
 				<div>
-					<h2 className='text-xl font-light mb-4'>
+					<h1 className=' text-[16px] md:text-[16px] text-[#333] xl:text-[21px] 2xl:text-[] mb-4'>
 						THE STORY OF Alturaash Art
-					</h2>
-					<p className='text-gray-700'>
+					</h1>
+					<p className='text-[#333] text-[12px]  xl:text-[14px] '>
 						Established in 2010, we have been working as an art
 						advisory group for the last decade, focusing on Indian
 						and Middle Eastern art. We are now at an exciting point
@@ -49,26 +51,28 @@ const AboutUs = () => {
 				</div>
 
 				<div>
-					<h3 className='text-lg font-light mb-4'>
+					<h3 className='font-light mb-4 text-[16px] md:text-[16px] text-[#333] xl:text-[21px]'>
 						Areas of interest for Alturaash Art are as follow
 					</h3>
 					<div className='flex flex-wrap gap-4'>
 						{areas.map((area, index) => (
-							<span key={index} className='text-gray-700'>
+							<span
+								key={index}
+								className='text-[#333333] bg-[#F4F4F4] p-2'>
 								{area}
 							</span>
 						))}
 					</div>
 				</div>
 
-				<div>
-					<h2 className='text-xl font-light mb-2'>
+				<div className='bg-[#FAFAFA] p-6 text-[12px] md:text-[16px] lg:text-[18px]'>
+					<h2 className='  mb-2'>
 						INDIAN ART AND ITS AUCTION SEGMENT
 					</h2>
-					<h3 className='text-lg mb-4'>
+					<h3 className=' mb-4'>
 						VIEW THE WONDER OF THIS GROWING AREA IN THE ART WORLD
 					</h3>
-					<p className='text-gray-700'>
+					<p className='text-gray-700 text-[10px] md:text-[12px] lg:text-[14px]'>
 						Indian art is witnessing a boom in sales like never
 						before. Artfi Curated Art is based in Dubai, with its
 						exhibition space in Dubai and New Delhi. Due to its
@@ -79,31 +83,6 @@ const AboutUs = () => {
 						parallel auction platform to open an international
 						gateway for the Indian art segment.
 					</p>
-				</div>
-
-				{/* Newsletter Section */}
-				{/* Newsletter Section */}
-				<div className='space-y-6 py-8'>
-					<h2 className='text-xl font-light'>
-						Sign up for latests updates
-					</h2>
-					<form className='space-y-6 max-w-full'>
-						<input
-							type='text'
-							placeholder='Full Name'
-							className='w-full px-4 py-2 border-b border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200'
-						/>
-						<input
-							type='email'
-							placeholder='Email'
-							className='w-full px-4 py-2 border-b border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200'
-						/>
-						<button
-							type='submit'
-							className='px-8 py-3 bg-black text-white hover:bg-gray-800 transition-colors rounded'>
-							Subscribe
-						</button>
-					</form>
 				</div>
 			</div>
 		</div>

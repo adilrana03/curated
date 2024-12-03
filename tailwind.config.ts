@@ -25,6 +25,7 @@ const config: Config = {
         'agrandir': ['Agrandir', 'sans-serif'],
         'mulish': ['Mulish', 'sans-serif'],
         'sf-pro-display': ['SF Pro Display', 'sans-serif'],
+         'urbanist': ['Urbanist', 'sans-serif']
 
       },
     },

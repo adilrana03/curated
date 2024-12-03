@@ -10,12 +10,12 @@ const Subscribe = () => {
 	};
 	return (
 		<div>
-			<div className='max-w- mx-auto border-t py-6'>
-				<div className='text-center mb-8'>
-					<h2 className='text-2xl font-light mb-4'>
+			<div className=' mx-auto border-t py-6 px-5 w-full md:w-[80%] lg:w-full'>
+				<div className=' mb-8 text-[#333] font-urbanist'>
+					<h2 className='lg:text-[22px] md:text-[18px] text-[14px] font-light mb-4'>
 						Sign up for latests updates
 					</h2>
-					<p className='text-gray-600'>
+					<p className='text-gray-600 lg:text-[14px] md:text-[12px] text-[10px]'>
 						Receive the best features, latest news about actions,
 						exibitions and more delivered to your inbox.
 					</p>

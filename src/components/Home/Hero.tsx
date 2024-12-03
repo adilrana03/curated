@@ -61,7 +61,7 @@ const Hero = () => {
 		<>
 			<div className='flex  justify-center bg-white border-b'>
 				{/* Left Sidebar */}
-				<div className='w-1/4 p-8 border-gray-200  items-center hidden md:flex flex-col md:justify-center'>
+				<div className='w-1/4 p-8 border-gray-200 text-[13px] text-[#000] font-urbanist  items-center hidden lg:flex flex-col md:justify-center'>
 					{artworks.map((artwork, index) => (
 						<div
 							key={artwork.id}
@@ -80,9 +80,9 @@ const Hero = () => {
 				</div>
 
 				{/* Main Content */}
-				<div className='md:flex-1 md:flex'>
+				<div className='md:flex-1 md:flex font-urbanist'>
 					{/* Image */}
-					<div className='w-[60%] p-12'>
+					<div className='md:w-[60%] p-12'>
 						<Image
 							src={artworks[currentIndex].image}
 							alt={artworks[currentIndex].title}
@@ -91,21 +91,21 @@ const Hero = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className='md:w-1/4 md:p-8 p-4 flex flex-col justify-center'>
-						<h2 className='text-xl font-light mb-6'>
+					<div className='md:w-1/4 md:p-8 p-4 flex flex-col justify-center text-center md:text-left'>
+						<h2 className='lg:text-[20px] md:text-[18px] text-[14px]  text-[#333]  mb-6 '>
 							{artworks[currentIndex].title}
 						</h2>
-						<p className='text-gray-600 mb-8'>
+						<p className='mb-8 lg:text-[13px] md:text-[14px] text-[10px]  text-[#333]'>
 							{artworks[currentIndex].description}
 						</p>
-						<button className='flex items-center text-black hover:text-gray-600 transition-colors'>
+						<button className='flex items-center text-[12px] text-black hover:text-gray-600 transition-colors justify-center md:justify-start'>
 							LEARN MORE{" "}
 							<ArrowRightIcon className='ml-2 w-4 h-4' />
 						</button>
 					</div>
 				</div>
 			</div>
-			<ServiceGrid/>
+			<ServiceGrid />
 		</>
 	);
 };

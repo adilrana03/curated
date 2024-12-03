@@ -48,22 +48,22 @@ const Navbar = () => {
 						<Image
 							src={logo}
 							alt='Artfi Curated'
-							className='w-auto md:w-[155px] mx-auto'
+							className='w-[20%] md:w-[155px] mx-auto'
 						/>
 					</Link>
 				</div>
 
-				<div className='hidden md:flex justify-between'>
+				<div className='hidden xl:flex justify-between text-[#333333] md:text-[] xl:text-[16px] 2xl:text-[] font-urbanist'>
 					<div className='flex space-x-8'>
 						<Link
-							href='/about-us'
+							href='/about'
 							className='text-gray-800 hover:text-gray-600'>
 							About us
 						</Link>
 
 						{Object.entries(navItems).map(([key, item]) => (
 							<div key={key} className='relative group'>
-								<button className='text-gray-800 hover:text-gray-600 flex items-center'>
+								<button className=' hover:text-gray-600 flex items-center'>
 									{item.label}
 									<ChevronDown className='ml-1 w-4 h-4' />
 								</button>
@@ -74,7 +74,7 @@ const Navbar = () => {
 											<Link
 												key={subItem.label}
 												href={subItem.href}
-												className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
+												className='block px-4 py-2  text-gray-700 hover:bg-gray-100'>
 												{subItem.label}
 											</Link>
 										))}
@@ -85,12 +85,12 @@ const Navbar = () => {
 
 						<Link
 							href='/services'
-							className='text-gray-800 hover:text-gray-600'>
+							className=' hover:text-gray-600'>
 							Services
 						</Link>
 						<Link
 							href='/departments'
-							className='text-gray-800 hover:text-gray-600'>
+							className=' hover:text-gray-600'>
 							Departments
 						</Link>
 					</div>
@@ -99,7 +99,7 @@ const Navbar = () => {
 					<div className='flex-1 flex justify-end items-center space-x-6'>
 						<Link
 							href='/login'
-							className='text-gray-800 hover:text-gray-600'>
+							className=' hover:text-gray-600'>
 							Log In
 						</Link>
 						<div className='relative'>

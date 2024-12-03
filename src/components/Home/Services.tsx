@@ -35,17 +35,19 @@ const ServiceGrid = () => {
 	];
 
 	return (
-		<div className='max-w-7xl mx-auto px-4 py-16'>
-			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16'>
+		<div className='max-w-7xl mx-auto px-[20px] md:px-[50px] lg:px-4 py-16'>
+			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 md:gap-12 gap-8 font-urbanist'>
 				{services.map((service, index) => (
-					<div key={index} className='space-y-4'>
-						<h2 className='text-2xl font-light'>{service.title}</h2>
-						<p className='text-gray-600 whitespace-pre-line'>
+					<div key={index} className='space-y-4 font-urbanist'>
+						<h2 className='lg:text-[21px] md:text-[16px] text-[14px] font-light md:w-[50%]'>
+							{service.title}
+						</h2>
+						<p className='text-[#333] whitespace-pre-line text-[10px] md:text-[12px] xl:text-[13px] 2xl:text-[16px] md:w-[80%]'>
 							{service.description}
 						</p>
 						<Link
 							href={service.link}
-							className='inline-flex items-center text-black hover:text-gray-600 mt-4'>
+							className='inline-flex items-center text-black hover:text-gray-600 mt-4 md:text-[12px] text-[10px]'>
 							LEARN MORE
 							<ArrowRight className='ml-2 w-4 h-4' />
 						</Link>

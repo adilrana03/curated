@@ -1,7 +1,7 @@
 // src/app/auction/ongoing/page.tsx
 import AuctionPage from "@/components/auctions/Auctions";
 
-export default function OngoingAuctions() {
+export default function UpcomingAuctions() {
 	return <AuctionPage type='upcoming' />;
 }
 

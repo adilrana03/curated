@@ -5,4 +5,3 @@ export default function OngoingAuctions() {
 	return <AuctionPage type='ongoing' />;
 }
 
-// Similar for upcoming/page.tsx and past/page.tsx with respective types

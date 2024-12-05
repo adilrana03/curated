@@ -84,24 +84,24 @@ Highlights include works from renowned artists who have contributed to shaping t
 				return (
 					<div className='p-4 max-w-7xl bg-[#FAFAFA]'>
 						<div className='flex justify-center gap-4 mb-8'>
-							<select className='border border-black p-2  w-40'>
+							<select className='border border-black p-2  md:w-40 w-[30%]'>
 								<option>Sort By</option>
 							</select>
-							<div className='flex gap-4'>
+							<div className='flex gap-4 w-[70%] lg:w-auto'>
 								<input
 									type='search'
 									placeholder='Lot'
-									className='border p-2  border-black'
+									className='border p-2 w-[50%] lg:w-auto border-black'
 								/>
 								<input
 									type='search'
 									placeholder='Search'
-									className='border p-2  border-black'
+									className='border p-2  w-[50%] lg:w-auto border-black'
 								/>
 							</div>
 						</div>
 
-						<div className='grid md:grid-cols-3 gap-6 px-20'>
+						<div className='grid md:grid-cols-3 gap-6 lg:px-20 font-urbanist'>
 							{auctionData.lots.map((lot) => (
 								<div
 									key={lot.id}
@@ -159,15 +159,15 @@ Highlights include works from renowned artists who have contributed to shaping t
 	};
 
 	return (
-		<div className='max-w-7xl mx-auto px-4 py-16 font-urbanist'>
+		<div className='max-w-7xl mx-auto px-4 lg:py-16 md:py-12 py-6 font-urbanist'>
 			<h1 className='text-2xl text-center mb-8'>{type} Auction</h1>
 
-			<div className='grid md:grid-cols-2 gap-10 mb-12 bg-[#FAFAFA] p-8 rounded-lg'>
-				<div className='space-y-6 w-[70%] tracking-wider my-auto'>
-					<h2 className='text-3xl font-light'>
+			<div className='flex flex-col-reverse md:grid md:grid-cols-2  gap-10 mb-12 bg-[#FAFAFA] md:p-8 p-4 rounded-lg'>
+				<div className='space-y-6 lg:w-[70%] text-center md:text-left tracking-wider my-auto'>
+					<h2 className='lg:text-3xl font-light'>
 						Modern Age Contemporary Sale
 					</h2>
-					<p className='text-[#333] text-xl font-ligh tracking-[2px] mb-3'>
+					<p className='text-[#333] lg:text-xl font-ligh tracking-[2px] mb-3'>
 						Dubai | Online Auction | Modern and Contemporary Middle
 						Eastern Art
 					</p>
@@ -177,10 +177,10 @@ Highlights include works from renowned artists who have contributed to shaping t
 						</a>
 					</div>
 
-					<div className='space-y-2 flex items-center gap-4'>
+					<div className='space-y-2 md:flex items-center justify-between gap-4'>
 						<p className='py-1 mt-2'>Starts in</p>
-						<div className='flex gap-2'>
-							<span className='bg-gray-200 px-3 py-1 rounded'>
+						<div className='flex gap-2 lg:text-lg text-sm justify-center md:justify-normal'>
+							<span className='bg-gray-200 px-3 py-1 rounded '>
 								{`${auctionData.timeLeft.days}Days ${auctionData.timeLeft.hours}hour`}
 							</span>
 							<span className='bg-gray-200 px-3 py-1 rounded'>
@@ -189,7 +189,7 @@ Highlights include works from renowned artists who have contributed to shaping t
 						</div>
 					</div>
 
-					<button className='border border-gray-300 px-6 py-2 hover:bg-gray-100'>
+					<button className='border border-gray-300 px-6 py-2 hover:bg-gray-100 flex justify-center md:justify-start mx-auto md:mx-0'>
 						Register to Bid
 					</button>
 				</div>

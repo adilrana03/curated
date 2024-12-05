@@ -46,16 +46,16 @@ const BrowseExhibition = () => {
 	};
 
 	return (
-		<div className='max-w-6xl mx-auto px-4 py-16'>
+		<div className='max-w-6xl mx-auto px-4 md:py-16 py-6'>
 			{/* Header Section */}
 			<div className='bg-gray-50 p-8 rounded-lg grid md:grid-cols-2 gap-8 mb-16 font-urbanist'>
-				<div className='space-y-4 my-auto w-[80%]'>
-					<h1 className='text-3xl font-light'>
+				<div className='md:space-y-4 space-y-2 my-auto w-[80%] mx-auto text-center md:text-left tracking-[2px]'>
+					<h1 className='lg:text-3xl text-[18px]  '>
 						{exhibitionData.title}
 					</h1>
-					<p className='text-gray-600'>{exhibitionData.subtitle}</p>
-					<p className='font-medium'>{exhibitionData.artist}</p>
-					<p className='text-gray-600'>{exhibitionData.curator}</p>
+					<p className='text-[#333] text-[10px] md:text-[12px] lg:text-[14px]'>{exhibitionData.subtitle}</p>
+					<p className=' text-[10px] md:text-[12px] lg:text-[14px]'>{exhibitionData.artist}</p>
+					<p className='text-[#333] text-[10px] md:text-[12px] lg:text-[14px]'>{exhibitionData.curator}</p>
 				</div>
 				<div>
 					<Image
@@ -81,32 +81,32 @@ const BrowseExhibition = () => {
 			</div>
 
 			{/* Artworks Grid */}
-			<div className='space-y-16  mx-auto'>
+			<div className='lg:space-y-16 md:space-y-12 space-y-6  mx-auto'>
 				{exhibitionData.artworks.map((artwork) => (
 					<div
 						key={artwork.id}
-						className='grid md:grid-cols-2 lg:flex gap-10  mx-auto items-center '>
+						className='flex justify-between gap-4 lg:flex md:gap-10  mx-auto items-center font-urbanist'>
 						<Image
 							src={artwork.image}
 							alt={artwork.title}
-							className='w-full lg:w-[35%] lg:h-[400px] rounded-lg'
+							className='w-[110px] h-[110px] md:w-[230px] md:h-[230px] lg:w-[35%] lg:h-[400px] rounded-lg'
 						/>
-						<div className='space-y-8 p-8 bg-gray-50 lg:h-[400px] lg:w-[60%]'>
+						<div className='md:space-y-8 md:p-8 bg-gray-50 lg:h-[400px] w-[250px] p-4 lg:w-[60%] font-urbanist text-[#333]'>
 							<div className='flex justify-between items-start'>
 								<div>
-									<h2 className='text-xl font-medium mb-3'>
+									<h2 className='lg:text-[28px] md:text-[16px] text-[12px]  mb-3'>
 										{artwork.artist}
 									</h2>
-									<h3 className='text-lg mb-3'>
+									<h3 className='lg:text-[24px] mb-3 text-[8px] font-light'>
 										{artwork.title}
 									</h3>
 								</div>
-								<span className='text-gray-600 underline'>
+								<span className='text-gray-600 underline text-[10px] lg:text-[24px]'>
 									{artwork.lot}
 								</span>
 							</div>
-							<div>
-								<div className='space-y-4 mb-8'>
+							<div className="text-[8px] md:text-[14px] lg:text-[20px]">
+								<div className='md:space-y-4 space-y-2 md:mb-8 mb-4'>
 									<p>Year : {artwork.year}</p>
 									<p>Medium : {artwork.medium}</p>
 									<p>Size : {artwork.size}</p>
@@ -118,8 +118,8 @@ const BrowseExhibition = () => {
 									</div>
 									<div>
 										<svg
-											width='44'
-											height='44'
+                                        className="lg:w-10 md:w-6 w-5"
+										
 											viewBox='0 0 44 44'
 											fill='none'
 											xmlns='http://www.w3.org/2000/svg'

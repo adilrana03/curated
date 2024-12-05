@@ -64,7 +64,7 @@ const ExhibitionPage = ({ type }:any) => {
 	const currentExhibition:any = exhibitionData[type];
 
 	return (
-		<div className='max-w-4xl mx-auto lg:px-4 px-5 md:px-[100px] py-16'>
+		<div className='max-w-4xl mx-auto lg:px-4 px-5 md:px-[100px] md:py-16 py-6'>
 			<h1 className='text-center text-2xl font-light mb-12'>
 				{type.charAt(0).toUpperCase() + type.slice(1)} Exhibition
 			</h1>
@@ -73,7 +73,7 @@ const ExhibitionPage = ({ type }:any) => {
 				<Image
 					src={currentExhibition.image}
 					alt={currentExhibition.title}
-					className='w-full max-w-2xl mx-auto'
+					className='w-[316px] h-[262px] md:w-[528px] md:h-[520px]  mx-auto'
 				/>
 
 				<div className='text-center space-y-4'>
@@ -89,18 +89,18 @@ const ExhibitionPage = ({ type }:any) => {
 					</p>
 				</div>
 
-				<div className='flex justify-center gap-4 mt-8'>
+				<div className='flex flex-col md:flex-row w-full justify-center gap-4 mt-8 font-urbanist'>
 					<button
-						className='px-6 py-2 border border-gray-300 hover:bg-gray-50'
+						className='px-6 py-2 border w-full border-gray-300 hover:bg-gray-50 '
 						onClick={handleBrowseClick}>
 						Browse Exhibition
 					</button>
 					<button
-						className='px-6 py-2 border border-gray-300 hover:bg-gray-50'
+						className='px-6 py-2 w-full border border-gray-300 hover:bg-gray-50 '
 						onClick={handleDetailClick}>
 						Exhibition Detail
 					</button>
-					<button className='px-6 py-2 border border-gray-300 hover:bg-gray-50'>
+					<button className='px-6 py-2 w-full border border-gray-300 hover:bg-gray-50 '>
 						Download Catalog
 					</button>
 				</div>

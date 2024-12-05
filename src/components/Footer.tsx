@@ -30,9 +30,9 @@ const Footer = () => {
 	};
 
 	return (
-		<footer className='bg-white pt-16 pb-8 border-t'>
-			<div className='container mx-auto px-4'>
-				<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8'>
+		<footer className='bg-white pt-16 pb-8 border-t '>
+			<div className='container mx-auto px-4 ml-5 lg:ml-auto'>
+				<div className='grid grid-cols-2 mx-auto md:grid-cols-4 lg:grid-cols-4 gap-8'>
 					{/* Dubai */}
 					<div className='space-y-4'>
 						<div className='flex items-center gap-2'>
